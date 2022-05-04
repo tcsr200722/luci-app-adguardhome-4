@@ -14,10 +14,10 @@ dns:
   bind_hosts:
   - 0.0.0.0
   port: 1745
-  statistics_interval: 30
+  statistics_interval: 1
   querylog_enabled: true
   querylog_file_enabled: true
-  querylog_interval: 6h
+  querylog_interval: 24h
   querylog_size_memory: 1000
   anonymize_client_ip: false
   protection_enabled: true
@@ -65,7 +65,7 @@ dns:
   max_goroutines: 300
   ipset: []
   filtering_enabled: true
-  filters_update_interval: 24
+  filters_update_interval: 0
   parental_enabled: false
   safesearch_enabled: false
   safebrowsing_enabled: false
