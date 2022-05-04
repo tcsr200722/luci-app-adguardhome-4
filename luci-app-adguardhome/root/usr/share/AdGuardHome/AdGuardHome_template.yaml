@@ -31,11 +31,17 @@ dns:
   ratelimit_whitelist: []
   refuse_any: false
   upstream_dns:
+  - 114.114.114.114
   - 223.5.5.5
+  - 119.29.29.29
+  - tls://dns.pub
+  - https://dns.pub/dns-query
+  - tls://dns.alidns.com
+  - https://dns.alidns.com/dns-query
   upstream_dns_file: ""
   bootstrap_dns:
-  - 119.29.29.29
-  - 223.5.5.5
+  - 202.96.128.86
+  - 221.5.88.88
   all_servers: false
   fastest_addr: false
   fastest_timeout: 1s
@@ -95,8 +101,8 @@ filters:
   name: AdGuard DNS filter
   id: 1628750870
 - enabled: true
-  url: https://anti-ad.net/easylist.txt
-  name: 'CHN: anti-AD'
+  url: https://halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt
+  name: halflife ad-pc
   id: 1628750871
 whitelist_filters: []
 user_rules: []
