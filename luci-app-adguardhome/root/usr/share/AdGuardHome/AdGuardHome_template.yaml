@@ -3,7 +3,7 @@ bind_port: 3000
 beta_bind_port: 0
 users:
 - name: root
-  password: $2y$10$dwn0hTYoECQMZETBErGlzOId2VANOVsPHsuH13TM/8KnysM5Dh/ve
+  password: $2a$05$qYP2PQxwNk1UCNRh21lR4e/pCILpx91RynxuqiB1teLkqydzfj7Mm
 auth_attempts: 5
 block_auth_min: 15
 http_proxy: ""
@@ -34,10 +34,14 @@ dns:
   - 114.114.114.114
   - 223.5.5.5
   - 119.29.29.29
+  - tcp://223.6.6.6
+  - tcp://202.14.67.4
   - tls://dns.pub
   - https://dns.pub/dns-query
   - tls://dns.alidns.com
   - https://dns.alidns.com/dns-query
+  - tcp://8.8.4.4
+  - tls://8.8.8.8
   upstream_dns_file: ""
   bootstrap_dns:
   - 202.96.128.86
@@ -97,13 +101,17 @@ tls:
   private_key_path: ""
 filters:
 - enabled: true
+  url: https://adaway.org/hosts.txt
+  name: AdAway hosts
+  id: 1628750870
+- enabled: true
   url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   name: AdGuard DNS filter
-  id: 1628750870
+  id: 1628750871
 - enabled: true
   url: https://halflife.coding.net/p/list/d/list/git/raw/master/ad-pc.txt
   name: halflife ad-pc
-  id: 1628750871
+  id: 1628750872
 whitelist_filters: []
 user_rules: []
 dhcp:
