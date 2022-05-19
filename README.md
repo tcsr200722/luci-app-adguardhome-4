@@ -1,2 +1,2 @@
 # luci-app-adguardhome
-默认用户名：root，密码：root
+默认用户名：root，密码：password
